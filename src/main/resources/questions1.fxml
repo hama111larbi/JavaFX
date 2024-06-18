@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="593.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.questions">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Pane layoutX="3.0" prefHeight="593.0" prefWidth="827.0" style="-fx-background-color: A5D6FF;">
+               <children>
+                  <Pane layoutX="-3.0" layoutY="-1.0" prefHeight="593.0" prefWidth="192.0" style="-fx-background-color: #6495ED;">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="66.0" layoutX="-9.0" layoutY="-11.0">
+                           <image>
+                              <Image url="/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="2.0" layoutY="28.0" prefHeight="11.0" prefWidth="81.0" text="9ariny-Academy" textFill="#151c5c">
+                           <font>
+                              <Font name="Arial" size="7.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="WHITE" layoutX="90.0" layoutY="67.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="54.0" fitWidth="56.0" layoutX="60.0" layoutY="34.0">
+                           <image>
+                              <Image url="/moi.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="63.0" layoutY="92.0" text="Nasfi Eya" />
+                        <Button cancelButton="true" defaultButton="true" layoutX="-1.0" layoutY="563.0" mnemonicParsing="false" onAction="#disc" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="    Déconnecté" textAlignment="RIGHT" wrapText="true" />
+                        <Label layoutX="109.0" layoutY="2.0" prefHeight="11.0" prefWidth="81.0" text="Bienvenue etudiant" textFill="#151c5c">
+                           <font>
+                              <Font name="Arial" size="9.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="7.0" layoutY="127.0" mnemonicParsing="false" onAction="#quiz" prefHeight="32.0" prefWidth="179.0" style="-fx-background-color: #87CEFA; -fx-background-radius: 20;" text="Gestion quiz" />
+                        <Button layoutX="7.0" layoutY="323.0" mnemonicParsing="false" onAction="#pai" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Liste des paiements" />
+                        <Button layoutX="7.0" layoutY="166.0" mnemonicParsing="false" onAction="#reclama" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestion reclamations" />
+                        <Button layoutX="7.0" layoutY="204.0" mnemonicParsing="false" onAction="#event" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestions events" />
+                        <Button layoutX="7.0" layoutY="244.0" mnemonicParsing="false" onAction="#formations" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestions Formations" />
+                        <Button layoutX="6.0" layoutY="283.0" mnemonicParsing="false" onAction="#cours" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestions Cours" />
+                        <Button layoutX="6.0" layoutY="364.0" mnemonicParsing="false" onAction="#remise" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestions des remises" />
+                        <Button layoutX="7.0" layoutY="403.0" mnemonicParsing="false" onAction="#salle" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestions des salles" />
+                        <Button layoutX="6.0" layoutY="443.0" mnemonicParsing="false" onAction="#club" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Gestions Clubs" />
+                        <Button layoutX="6.0" layoutY="482.0" mnemonicParsing="false" onAction="#equipement" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="Equipements" />
+                        <Button layoutX="7.0" layoutY="522.0" mnemonicParsing="false" onAction="#verspageadus" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #87CEFA#87CEFA; -fx-background-radius: 20;" text="affichage users" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="264.0" layoutY="107.0" prefHeight="17.0" prefWidth="191.0" text="Ajouter un quiz" textFill="#151c5c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="217.0" layoutY="136.0" />
+                  <VBox layoutX="330.0" layoutY="222.0" prefHeight="204.0" prefWidth="341.0">
+                     <children>
+                        <TextField fx:id="ecrire1" promptText="option1">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="51.0" right="50.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="ecrire2" promptText="option2">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="ecrire3" promptText="option3">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <TextField fx:id="question" layoutX="277.0" layoutY="136.0" prefHeight="64.0" prefWidth="433.0" promptText="question" />
+                  <Button layoutX="517.0" layoutY="409.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#ajout" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 20;" text="ajouter un autre question" />
+                  <Button layoutX="583.0" layoutY="453.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#submit" prefHeight="33.0" prefWidth="125.0" style="-fx-background-radius: 20;" text="submit" />
+                  <Button layoutX="264.0" layoutY="383.0" mnemonicParsing="false" onAction="#affi" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #87CEFA;" text="Ecrire la bonne reponse" />
+                  <ComboBox fx:id="answerbox" layoutX="305.0" layoutY="427.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
